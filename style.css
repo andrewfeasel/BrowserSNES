@@ -1,31 +1,43 @@
-
 body {
-  text-align: center;
-  background-color: #efefef;
+  background-color: #000000;
+  font-family: monospace;
+  color: #88E788;
 }
-
+input{
+    background-color:#000000;
+    border-color: #88E788;
+    color: #88E788;
+}
+button{
+    background-color:#000000;
+    border-color: #88E788;
+    color: #88E788;
+}
+a{
+    color: #88E788;
+}
 pre {
   margin: 0;
   padding: 0;
+  color: #88E788;
 }
-
 #log {
-  font-family: monospace;
-  max-height: 200px;
-  min-height: 200px;
-  overflow: scroll;
   text-align: left;
+  font-family: monospace;
+  max-height: 50px;
+  min-height: 50px;
+  overflow: scroll;
+  border-color: #88E788;
+  color: #88E788;
   /* width: 512px; */
   /* for easier reading of the tracelog */
-  width: 1000px;
-  margin: auto;
-  border: 1px solid #afafaf;
-  padding: 5px;
+  width: 512px;
+  border: 1px solid;
 }
 
 #output {
-  width: 512px;
-  height: 480px;
+  width: auto;
+  height: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }

@@ -1,37 +1,45 @@
 <!doctype html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>SnesJS</title>
-</head>
-<body>
-  <input id="rom" type="file">
-  <input id="ishirom" type="checkbox"> HiROM
-  <button id="pause">Pause</button>
-  <button id="reset">Reset</button>
-  <button id="hardreset">Power cycle</button>
-  <button id="runframe">Run 1 frame</button><br>
-  <canvas id="output"></canvas>
-  <pre id="log"></pre>
-  <p>
-    SnesJs, by angelo_wf. <a href="spcplayer.html">SpcJs</a>.<br>
-    Source on <a href="https://github.com/angelo-wf/SnesJs">Github</a>.
-  </p>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>SnesJS</title>
+    </head>
+    <body>
+        <center>
+            <input id="rom" type="file">
+            <input id="ishirom" type="checkbox"> HiROM
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+            <button id="hardreset">Power cycle</button>
+            <button id="runframe">Run 1 frame</button>
+            <hr>
+            <canvas id="output"></canvas>
+            <hr>
+            <pre id="log"></pre>
+        </center>
 
-  <script src="lib/zip.js"></script>
-  <script src="lib/inflate.js"></script>
-
-  <script src="snes/cart.js"></script>
-  <script src="snes/dsp.js"></script>
-  <script src="snes/spc.js"></script>
-  <script src="snes/apu.js"></script>
-  <script src="snes/pipu.js"></script>
-  <script src="snes/cpu.js"></script>
-  <script src="snes/snes.js"></script>
-
-  <script src="js/audio.js"></script>
-  <script src="js/trace.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
+        <script src="lib/zip.js"></script>
+        <script src="lib/inflate.js"></script>
+        <script src="snes/cart.js"></script>
+        <script src="snes/dsp.js"></script>
+        <script src="snes/spc.js"></script>
+        <script src="snes/apu.js"></script>
+        <script src="snes/pipu.js"></script>
+        <script src="snes/cpu.js"></script>
+        <script src="snes/snes.js"></script>
+        <script src="js/audio.js"></script>
+        <script src="js/trace.js"></script>
+        <script src="js/main.js"></script>
+        <p id="normalControls">
+            Controllers 1 and 2 work but 1 has no programmed inputs<br>
+            UP = UP ARROW, DOWN = DOWN ARROW, LEFT = LEFT ARROW, RIGHT = RIGHT ARROW,<br>
+            START = ENTER, SELECT = SHIFT, A = X, B = Z, X = S, Y = A, L = D, R = C. <br>
+        </p>
+        <p id="specialControls">
+            - Pressing L will toggle 'log-mode', where it logs CPU instructions.<br>
+            - Pressing P will toggle 'no-PPU mode', where it will not emulate the PPU rendering.
+        </p>
+        <p>Edited by @andrewfeasel and created by @angelo-wf (GitHub)</p>
+        <a href='https://github.com/andrewfeasel?tab=repositories'>More Games</a>
+    </body>
 </html>
