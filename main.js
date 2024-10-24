@@ -185,18 +185,6 @@ function update() {
 }
 
 window.onkeydown = function(e) {
-  switch(e.key) {
-    case "l":
-    case "L": {
-      logging = !logging;
-      break;
-    }
-    case "p":
-    case "P": {
-      noPpu = !noPpu;
-      break;
-    }
-  }
   if(controlsP1[e.key.toLowerCase()] !== undefined) {
     e.preventDefault();
     snes.setPad1ButtonPressed(controlsP1[e.key.toLowerCase()]);
