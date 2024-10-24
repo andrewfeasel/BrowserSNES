@@ -21,6 +21,20 @@ pre {
   padding: 0;
   color: #88E788;
 }
+#log {
+  text-align: left;
+  font-family: monospace;
+  max-height: 50px;
+  min-height: 50px;
+  overflow: scroll;
+  border-color: #88E788;
+  color: #88E788;
+  /* width: 512px; */
+  /* for easier reading of the tracelog */
+  width: 512px;
+  border: 1px solid;
+}
+
 #output {
   width: auto;
   height: auto;
